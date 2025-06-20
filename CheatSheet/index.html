@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>HTML & CSS Cheat Sheet</title>
+    <link href="./styles.css" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Lexend:wght@100..900&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!--Quick description of the purpose of this page-->
+    <div id="introduction">
+        <h1>Welcome to my HTML & CSS Cheat Sheet</h1>
+        <h3>This is a quick guide of basic concepts for reference.</h3>
+    </div>
+
+    <!--HTML Reference Table-->
+    <div id="html-tags-table">
+        <table>
+            <thead>
+                <tr>
+                    <th scope="col">
+                        HTML Tag/Attribute
+                    </th>
+                    <th scope="col">
+                        Purpose
+                    </th>
+                    <th scope="col">
+                        Additional Notes
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">
+                        div
+                    </th>
+                    <td>
+                        helps to section html code
+                    </td>
+                    <td>
+                        this is good to have for clean look and easy readability and makes it easier to add class or id attributes and helps with styling
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">
+                        span
+                    </th>
+                    <td>
+                        helps to make specific changes to inline elements 
+                    </td>
+                    <td>
+                        I mostly use this if trying to make specific text in a paragraph stand out
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">
+                        id
+                    </th>
+                    <td>
+                        helps to make unique identifier for a specific section in html
+                    </td>
+                    <td>
+                        this can be a big help when it comes to css styling
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">
+                        class
+                    </th>
+                    <td>
+                        helps to make unique identifier for a group of sections in html
+                    </td>
+                    <td>
+                        this can be a big help when it comes to css styling and you want all things in those sections to be uniform
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">
+                        h1 - h6
+                    </th>
+                    <td>
+                        there are 6 different sizes of headings, h1 - h6
+                    </td>
+                    <td>
+                        great for titles, section headers, photo captions, and much more
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">
+                        p
+                    </th>
+                    <td>
+                        the paragraph tag is where all the main body of text would go in html
+                    </td>
+                    <td>
+                        this tag is one of the most often used
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">
+                        img
+                    </th>
+                    <td>
+                        image tag is used to insert an image 
+                    </td>
+                    <td>
+                        this tag doesn't need an opening and closing tag it is one tag that you close and height and width attributes
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">
+                        video
+                    </th>
+                    <td>
+                        this tag is so you can add videos and video controls 
+                    </td>
+                    <td>
+                        This uses an opening and closing tag with the source tag in between 
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">
+                        audio
+                    </th>
+                    <td>
+                        this tag is so you can add audio and audio controls to your webpage
+                    </td>
+                    <td>
+                        this also has an opening and closing tag but the src and controls go in the opening tag
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">
+                        figure
+                    </th>
+                    <td>
+                        an image, illustration, diagram, code snippet, etc., that is referenced in the main flow of a document, but that can be moved to another part of the document or to an appendix without affecting the main flow
+                    </td>
+                    <td>
+                        represents self-contained content, potentially with an optional caption, which is specified using the figcaption element
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">
+                        figcaption
+                    </th>
+                    <td>
+                        used to caption the figure or add a legend to the figure element
+                    </td>
+                    <td>
+                        used within the figure opening and closing tags 
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">
+                        strong
+                    </th>
+                    <td>
+                        use these tags around text you want to be bold
+                    </td>
+                    <td>
+                        this is used to help emphasize text
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">
+                        link
+                    </th>
+                    <td>
+                        this is used in the head tags to link stylesheets or other items you want to be available to your html file
+                    </td>
+                    <td>
+                        I mainly use this for css style sheets or adding new web fonts
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">
+                        body
+                    </th>
+                    <td>
+                        this tag contains the main content of your html code that will show on your webpage
+                    </td>
+                    <td>
+                        
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">
+                        head
+                    </th>
+                    <td>
+                        this is where you put the metadata for your webpage
+                    </td>
+                    <td>
+                        includes things title, links, etc.
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">
+                        title
+                    </th>
+                    <td>
+                        this is the title that will display on tab in an internet browser
+                    </td>
+                    <td>
+                        
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">
+                        table
+                    </th>
+                    <td>
+                        this is tag that would start a table like is currently displaying
+                    </td>
+                    <td>
+                        this has child elements of thead, th, tbody, tr, td, etc.
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">
+                        br
+                    </th>
+                    <td>
+                        this is a break line to add white space to your webpage 
+                    </td>
+                    <td>
+                        this is only one tag not an opening and closing tag
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <br/><br/>
+    <!--CSS Reference Table-->
+    <div id="css-elements-table">
+        <table>
+            <thead>
+                <tr>
+                    <th scope="col">
+                        CSS Element
+                    </th>
+                    <th scope="col">
+                        Purpose
+                    </th>
+                    <th scope="col">
+                        Additional Notes
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">
+                        inline styling
+                    </th>
+                    <td>
+                        this is styling added to the html file inline with what ever area you are trying to change the display to
+                    </td>
+                    <td>
+                        this can get unorganized and hard to keep clean
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">
+                        styling sheet
+                    </th>
+                    <td>
+                        this is a css file that is used to organize all styling elements for any specified code elements
+                    </td>
+                    <td>
+                        this is the preferred and recommended route
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">
+                        box model
+                    </th>
+                    <td>
+                        every box is composed of four parts, defined by their respective edges: the content edge, padding edge, border edge, and margin edge
+                    </td>
+                    <td>
+                        this is the general layout of every element displayed on a webpage and good to keep in mind when creating your css
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">
+                        colors
+                    </th>
+                    <td>
+                        
+                    </td>
+                    <td>
+                        
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">
+                        typography
+                    </th>
+                    <td>
+                        
+                    </td>
+                    <td>
+                        
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">
+                        media
+                    </th>
+                    <td>
+                        
+                    </td>
+                    <td>
+                        
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">
+                        class styling
+                    </th>
+                    <td>
+                        
+                    </td>
+                    <td>
+                        
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">
+                        id styling
+                    </th>
+                    <td>
+                        
+                    </td>
+                    <td>
+                        
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">
+                        sizing
+                    </th>
+                    <td>
+                        
+                    </td>
+                    <td>
+                        
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">
+                        backgrounds
+                    </th>
+                    <td>
+                        
+                    </td>
+                    <td>
+                        
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">
+                        foregrounds
+                    </th>
+                    <td>
+                        
+                    </td>
+                    <td>
+                        
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">
+                        borders
+                    </th>
+                    <td>
+                        
+                    </td>
+                    <td>
+                        
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">
+                        styling tables
+                    </th>
+                    <td>
+                        
+                    </td>
+                    <td>
+                        
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">
+                        whitespace
+                    </th>
+                    <td>
+                        
+                    </td>
+                    <td>
+                        
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <!--Footer-->
+    <div id="footer">
+        <p> I will continue to add to this. </p>
+    </div>
+</body>
+
+</html>
